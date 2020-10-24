@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppPaddings {
   static double contentPaddingSize = 20;
+  static double bigContentPaddingSize = 30;
   static double buttonPaddingSize = 10;
   static double smallButtonPaddingSize = 5;
   static double mediumButtonPaddingSize = 15;
@@ -13,6 +14,9 @@ class AppPaddings {
       horizontal: contentPaddingSize,
     );
   }
+
+  static EdgeInsets bigContentPadding() =>
+      EdgeInsets.all(bigContentPaddingSize);
 
   static EdgeInsets vendorPageContentPadding() {
     return EdgeInsets.fromLTRB(

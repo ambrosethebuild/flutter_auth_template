@@ -28,7 +28,7 @@ class RoundedContainer extends StatelessWidget {
           ),
         ],
       ),
-      padding: AppPaddings.defaultPadding(),
+      padding: AppPaddings.bigContentPadding(),
       child: this.body,
     );
   }

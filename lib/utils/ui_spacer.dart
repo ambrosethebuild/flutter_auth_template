@@ -7,6 +7,6 @@ class UiSpacer {
   //space between widgets horizontally
   static Widget horizontalSpace({double space = 20}) => SizedBox(width: space);
 
-  static Widget formVerticalSpace({double space = 10}) =>
+  static Widget formVerticalSpace({double space = 15}) =>
       SizedBox(height: space);
 }
