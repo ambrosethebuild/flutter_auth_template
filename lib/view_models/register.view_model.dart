@@ -7,6 +7,10 @@ class RegisterViewModel extends BaseViewModel {
   TextEditingController emailTEC = new TextEditingController();
   TextEditingController passwordTEC = new TextEditingController();
 
+  RegisterViewModel(BuildContext context) {
+    this.viewContext = context;
+  }
+
   void initialise() {}
 
   void onRegisterPressed() async {

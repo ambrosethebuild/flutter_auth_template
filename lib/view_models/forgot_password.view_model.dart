@@ -5,6 +5,10 @@ class ForgotPasswordViewModel extends BaseViewModel {
   //the textediting controllers
   TextEditingController emailTEC = new TextEditingController();
 
+  ForgotPasswordViewModel(BuildContext context) {
+    this.viewContext = context;
+  }
+
   void initialise() {}
 
   void onResetPasswordPressed() async {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_template/constants/app_paddings.dart';
-import 'package:flutter_auth_template/constants/app_routes.dart';
 import 'package:flutter_auth_template/constants/app_text_styles.dart';
 import 'package:flutter_auth_template/services/validator.service.dart';
 import 'package:flutter_auth_template/utils/ui_spacer.dart';
@@ -22,7 +21,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<RegisterViewModel>.reactive(
-      viewModelBuilder: () => RegisterViewModel(),
+      viewModelBuilder: () => RegisterViewModel(context),
       onModelReady: (model) => model.initialise(),
       builder: (context, model, child) {
         return BasePage(

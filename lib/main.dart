@@ -39,7 +39,7 @@ void main() async {
       debugShowCheckedModeBanner: false,
       title: AppStrings.appName,
       onGenerateRoute: router.generateRoute,
-      // initialRoute: _startRoute,
+      initialRoute: _startRoute,
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

@@ -21,7 +21,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<ForgotPasswordViewModel>.reactive(
-      viewModelBuilder: () => ForgotPasswordViewModel(),
+      viewModelBuilder: () => ForgotPasswordViewModel(context),
       onModelReady: (model) => model.initialise(),
       builder: (context, model, child) {
         return BasePage(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth_template/constants/app_colors.dart';
 import 'package:flutter_auth_template/constants/app_paddings.dart';
 import 'package:flutter_auth_template/constants/app_routes.dart';
-import 'package:flutter_auth_template/constants/app_sizes.dart';
 import 'package:flutter_auth_template/constants/app_text_styles.dart';
 import 'package:flutter_auth_template/services/validator.service.dart';
 import 'package:flutter_auth_template/utils/ui_spacer.dart';
@@ -25,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<LoginViewModel>.reactive(
-      viewModelBuilder: () => LoginViewModel(),
+      viewModelBuilder: () => LoginViewModel(context),
       onModelReady: (model) => model.initialise(),
       builder: (context, model, child) {
         return BasePage(
